@@ -24,7 +24,7 @@ describe('Cart', () => {
     expect(cartItems.sort()).toEqual(randomItems.sort());
   });
 
-  it('reset app state should remove items from cart', async () => {
+  it.skip('reset app state should remove items from cart', async () => {
     const products = await inventoryPo.getProducts();
 
     const randomItems = products.sort(() => 0.5 - Math.random()).slice(0, 3);
