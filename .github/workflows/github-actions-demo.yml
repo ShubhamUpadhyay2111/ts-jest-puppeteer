@@ -1,7 +1,12 @@
 name: ts jest puppeteer
-on: pull_request
+on: 
+  push: 
+    branches: [ quarter1-and-2-goals ]
+  pull_request: 
+    branches: [ quarter1-and-2-goals ]
 jobs:
-  Explore-GitHub-Actions:
+  test:
+
     runs-on: ubuntu-latest
 
     strategy:
