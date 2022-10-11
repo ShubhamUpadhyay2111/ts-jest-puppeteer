@@ -1,9 +1,5 @@
 name: ts jest puppeteer
-on: 
-  push: 
-    branches: [ quarter1-and-2-goals ]
-  pull_request: 
-    branches: [ quarter1-and-2-goals ]
+on: [push, pull_request ]
 jobs:
   test:
 
